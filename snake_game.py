@@ -20,7 +20,7 @@ pygame.display.set_caption('Snake Game by Aarsh')
 
 clock = pygame.time.Clock()
 snake_block = 10
-snake_speed = 25
+snake_speed = 15
 
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("Timenewroman", 35)
@@ -124,109 +124,4 @@ def gameLoop():
 gameLoop()
 
 
-# from tkinter import *
-# root = Tk()
-# root.geometry("500x500")
-# root.title("TIC TAC TOE")
-
-# #Game Name: TIC TACT TOE
-
-# frame1 = Frame(root)
-# frame1.pack()
-# titlelabel1 = Label(frame1, text="Tic Tac Toe", font=("Comic sans ms", 30), bg="red")
-# titlelabel1.pack()
-
-# #GAME BOARD
-
-# turn ="x"
-
-# def play(event):
-#     global turn
-#     button = event.widget
-
-#     if turn== "x":
-#         button["text"] = "X"
-#         turn = "o"
-#     else:
-#         button["text"] ="O"
-#         turn = "x"
-# frame2 = Frame(root)
-# frame2.pack()
-
-# #First Row
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 0, column=0)
-# button.bind("<Button-1>", play)
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 0, column=1)
-# button.bind("<Button-1>", play)
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 0, column=2)
-# button.bind("<Button-1>", play)
-
-# #Second Row
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 1, column=0)
-# button.bind("<Button-1>", play)
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 1, column=1)
-# button.bind("<Button-1>", play)
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 1, column=2)
-# button.bind("<Button-1>", play)
-
-# #Third Row
-
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 3, column=0)
-# button.bind("<Button-1>", play)
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 3, column=1)
-# button.bind("<Button-1>", play)
-
-# button = Button(frame2, text=" ", width=4, height=2, font=("Arial", 30), bg ="yellow", relief=RAISED, borderwidth=5)
-# button.grid(row = 3, column=2)
-# button.bind("<Button-1>", play)
-
-# root.mainloop()
-
-
-# import random
-
-# options = ["rock", "paper", "scissors"]
-
-# while True:
-#     user_choice = input("Enter rock, paper, or scissors (or 'quit' to stop): ").lower()
-
-#     if user_choice == "quit":
-#         print("Thanks for playing!")
-#         break
-
-#     if user_choice not in options:
-#         print("Invalid choice, try again!")
-#         continue
-
-#     computer_choice = random.choice(options)
-#     print(f"Computer chose: {computer_choice}")
-
-#     if user_choice == computer_choice:
-#         print("It's a tie!")
-#     elif:
-        
-#        (user_choice == "rock" and computer_choice == "scissors") or
-#        (user_choice == "paper" and computer_choice == "rock") or
-#        (user_choice == "scissors" and computer_choice == "paper")
-    
-#         print("You win!")
-#     else:
-#         print("You lose!")
-        
-#     print()
+ 
